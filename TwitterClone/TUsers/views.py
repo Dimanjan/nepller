@@ -235,4 +235,4 @@ def users(request):
     if request.method == 'GET':
         users = TUser.objects.all()
         serializer = TUserSerializer(users, many=True)
-        return Response(serializer.data)      
+        return Response(serializer.data)   

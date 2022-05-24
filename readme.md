@@ -10,3 +10,5 @@ Change the swagger index.file: {% load staticfiles %} has been deprecated in dja
 Lib\site-packages\rest_framework_swagger\templates\rest_framework_swagger\index.html
 
 Modify {% load staticfiles %} to {% load static %}
+
+pip install PyJWT==1.7.1

@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from Tweets.models import TCTweet
+from Tweets.models import TCtweets
 from django import forms
 
-class TCTweetSerializer(serializers.ModelSerializer):
+class TCtweetsSerializer(serializers.ModelSerializer):
     class Meta:
-        model=TCTweet
+        model=TCtweets
         fields='__all__'
 
 class TCValidator(forms.Form):
