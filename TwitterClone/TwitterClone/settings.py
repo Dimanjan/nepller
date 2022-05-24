@@ -43,6 +43,11 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
 ]
 
+import uuid
+ 
+#RANDOM AUTHENTICATION TOKEN GENERATOR
+AUTH_TOKEN = uuid.uuid4().hex.upper()
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
